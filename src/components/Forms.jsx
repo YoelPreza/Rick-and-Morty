@@ -4,6 +4,7 @@ import validation from "./validation.js"
 import style from "./Forms.module.css"
 import { useNavigate } from "react-router-dom"
 import waiting from "../images/waiting_sing_in.gif"
+import { Link } from "react-router-dom";
 
 export function Forms(props) {
 
@@ -46,10 +47,12 @@ export function Forms(props) {
     return (
     
         <div className={style.contenedorForms}>
-            <h1> Type the magical words  </h1>
-            <img className={style.singin} src={waiting} width="300px" height="150px" alt="waiting" />
+            {/* <h1> Type the magical words  </h1> */}
 
-            <form onSubmit={handleSubmit}>
+            <img className={style.singin} src={waiting} width="400px" height="230px" alt="waiting" />
+            <h1 className={style.h1}> App where you can find Rick and Morty characters!!!  </h1>
+
+            {/* <form onSubmit={handleSubmit}>
 
                 <label className={style.espacio} htmlFor="userName"> Username  </label>
                 <input className={errors.userName && style.warning}
@@ -76,7 +79,10 @@ export function Forms(props) {
                 <button type="submit"> Login </button>
 
 
-            </form>
+            </form> */}
+<Link to="/home">      
+<button className={style.buton}>Search</button>
+</Link>
         </div>
     
 

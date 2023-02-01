@@ -15,7 +15,7 @@ export default function SearchBar(props) {
       <div>
          <input className={style.Buscar} type='search'
          name="nameInput"
-         placeholder="Introduce el id de la tarjeta"
+         placeholder="Introduce el id del 1 al 826"
          onChange={handleInputChange}
          value={character} />
          

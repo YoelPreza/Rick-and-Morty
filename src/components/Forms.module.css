@@ -1,13 +1,16 @@
 .contenedorForms {
   display: grid;
   place-items: center;
-  background-color: #e5e4e4;
-  width: 350px;
+  /* background-color: rgb(8, 8, 8); */
+  background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(250,7,130,1) 50%, rgba(0,0,0,1) 100%);
+  /* opacity: 95%; */
+  width: 600px;
   height: 500px;
-  margin-top: 100px;
+  margin-top: 60px;
   border-radius: 1em;
   /*margin-left: 300px;*/
-  box-shadow: inset 0 0 15px red, 0 0 25px red;
+  /* box-shadow: inset 0 0 15px red, 0 0 25px red; */
 }
 
 .warning {
@@ -27,4 +30,29 @@
 
 .espacio{
   margin-right: 8px;
+}
+.h1{
+  font-size: 20px;
+  padding:20px;
+  /* border: 1px solid black; */
+  box-shadow: inset 0 0 15px yellow, 0 0 25px yellow;
+  color: wheat;
+}
+.buton{
+  border-top: 0px;
+  width: 135px;
+  height: 40px;
+  border-radius: 1em;
+  background-color: black;
+  cursor: pointer;
+}
+
+.buton:hover{
+  border-top: 0px;
+  width: 135px;
+  height: 40px;
+  border-radius: 1em;
+  background-color: wheat;
+  cursor: pointer;
+  color:black
 }
