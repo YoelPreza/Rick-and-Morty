@@ -1,0 +1,26 @@
+.Buscar{
+    background-color: pink;
+    opacity: 1px;
+    border: 1px solid blac;
+    width: 308px;
+    height: 31px;
+    
+}
+
+.botonBuscar{
+   
+    background-color: #000000;
+    padding: 5px;
+    width: 87px;
+    color: white;
+    margin-right: 30px;
+}
+
+::placeholder{
+color:black;
+text-align: center;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+font-size: 15px;
+};
+
+

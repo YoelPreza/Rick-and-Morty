@@ -1,0 +1,70 @@
+.contenedor {
+   background-image: linear-gradient(blue, red);
+   opacity: 0.9;
+   color: whitesmoke;
+   border-radius: 10px;
+   width: fit-content;
+   height: fit-content;
+   border: 3px solid rgb(10, 2, 246);
+   display: inline-block;
+   margin: 0.5em;
+}
+
+.botonesCards {
+
+   display: flex;
+   justify-content: space-between;
+}
+
+.nombre {
+   color: rgb(242, 255, 0);
+
+
+}
+
+.botonFavyCerrar {
+   cursor: pointer;
+   background-color: red;
+   padding: 5px;
+   border-radius: -53em;
+   width: 45px;
+   color: white;
+
+}
+
+
+.imagenes {
+   border-radius: 853px;
+   border: 3px solid black;
+   margin: 10px;
+}
+
+.cardDetail {
+   /* background-color: rgb(255, 0, 157); */
+   width: fit-content;
+   border-radius: 1em;
+   display: flex;
+   flex-direction: row-reverse;
+   margin: auto;
+   margin-top: 5em;
+}
+
+.botonDetail {
+   cursor: pointer;
+   background-color: darkblue;
+   color: wheat;
+   border: 1px solid white;
+   width: 100px;
+   height: 30px;
+   border-radius: 2em;
+}
+
+.textoDetail {
+   color: beige;
+   margin: auto;
+   padding: 2em;
+   border: 2px solid;
+   border-radius: 1em;
+   background-image: linear-gradient(red, blue);
+   opacity: 0.9;
+}

@@ -1,0 +1,53 @@
+.about{
+  color: beige;
+  margin: auto;
+  padding: 2em;
+  border: 2px solid;
+  border-radius: 1em;
+  background-image: linear-gradient(red, blue);
+  /* opacity: 0.9; */
+  width: 80%;
+  /* margin-right: 100px; */
+  margin-bottom: 2em;
+
+;
+}
+.yoelImagen{
+    border-radius: 1em;
+  }
+
+  .display{
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: auto;
+    margin-top: 20px;
+  }
+.FullStack{
+  margin-bottom: 1em;
+  border-bottom: 2px solid;
+  padding-bottom: 0.3em;
+  font-family: sans-serif;
+  font-size: 25px;
+}
+  .Me{
+    margin: 3em;
+  }
+
+  .DisplayHS{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .Hobbies{
+    border-radius: 1em;
+    text-align: left;
+    border: 1px solid;
+    padding: 1em;
+  }
+  .Skills{
+    border-radius: 1em;
+    text-align: left;
+    border: 1px solid;
+    padding: 1em;
+  }

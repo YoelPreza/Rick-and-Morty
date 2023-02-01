@@ -1,0 +1,18 @@
+.nav{
+    /* position:fixed; */
+    display:flex;
+    background-image: linear-gradient(red, blue);
+    opacity: 0.9;
+    width:1245px;
+    height: 60px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.botonesNav{
+    background-color: #000000;
+    padding: 5px;
+    border-radius: 1em;
+    width: 148px;
+    color: white;
+    margin-right: 30px;
+}
