@@ -1,16 +1,12 @@
 .contenedorForms {
-  display: grid;
-  place-items: center;
-  /* background-color: rgb(8, 8, 8); */
-  background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(250,7,130,1) 50%, rgba(0,0,0,1) 100%);
-  /* opacity: 95%; */
-  width: 600px;
+  display: flex;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(250,7,130,1) 50%, rgba(0,0,0,1) 100%);
+  width: 100%;
   height: 500px;
-  margin-top: 60px;
-  border-radius: 1em;
-  /*margin-left: 300px;*/
-  /* box-shadow: inset 0 0 15px red, 0 0 25px red; */
+  /* border-radius: 1em; */
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
 }
 
 .warning {
@@ -26,25 +22,38 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(250,7,130,1) 50%, rgba
 
 .singin{
   border-radius: 1000px;
+  box-shadow: inset 0 0 15px yellow, 0 0 25px yellow;
+margin-top: 50px;
 }
 
 .espacio{
   margin-right: 8px;
 }
+
+.contenth1{
+  width: 300px;
+  height: 80px;
+ padding: 0px;
+}
+
 .h1{
-  font-size: 20px;
+  font-size: 30px;
   padding:20px;
   /* border: 1px solid black; */
-  box-shadow: inset 0 0 15px yellow, 0 0 25px yellow;
+  /* box-shadow: inset 0 0 15px yellow, 0 0 25px yellow; */
   color: wheat;
+  margin-top: 10px;
 }
 .buton{
   border-top: 0px;
   width: 135px;
   height: 40px;
   border-radius: 1em;
-  background-color: black;
+  background-color: transparent;
   cursor: pointer;
+  color:white;
+  border: 2px solid white;
+  margin-top: 60px;
 }
 
 .buton:hover{
@@ -52,7 +61,8 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(250,7,130,1) 50%, rgba
   width: 135px;
   height: 40px;
   border-radius: 1em;
-  background-color: wheat;
+  background-color: black;
   cursor: pointer;
-  color:black
+  color:white;
+  border: 2px solid white;
 }

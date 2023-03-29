@@ -1,9 +1,9 @@
 .nav{
-    /* position:fixed; */
+    /* position:relative; */
     display:flex;
     background-image: linear-gradient(red, blue);
     opacity: 0.9;
-    width:1345px;
+    width: 100%;
     height: 60px;
     justify-content: flex-end;
     align-items: center;
@@ -15,4 +15,13 @@
     width: 148px;
     color: white;
     margin-right: 30px;
+}
+.botonesNav:hover{
+    background-color: white;
+    padding: 5px;
+    border-radius: 1em;
+    width: 148px;
+    color: black;
+    margin-right: 30px;
+    border: none;
 }

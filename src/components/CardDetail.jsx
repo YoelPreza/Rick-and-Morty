@@ -3,18 +3,18 @@ import React from "react";
 import { useState } from "react";
 import { useParams} from "react-router-dom";
 import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import style from "./Card.module.css"
 
 
 
 export const CardDetail=()=> {
    let {detailId} = useParams();
-   const navigate = useNavigate();
+   // const navigate = useNavigate();
 
-  function backToHome(){
-    navigate("/home")
-  }
+//   function backToHome(){
+//     navigate("/home")
+//   }
 
   const [character, setCharacter] = useState("")
   useEffect(() => {
@@ -41,8 +41,8 @@ export const CardDetail=()=> {
             <h2>Status: {character.status}</h2>
             <h2>Specie: {character.species}</h2>
             <h2>Gender: {character.gender}</h2>
-        <button className={style.botonDetail} onClick={backToHome}>Volver</button>
         </div>
+        {/* <button className={style.botonDetail} onClick={backToHome}>Volver</button> */}
     </div>
     
  )

@@ -1,5 +1,5 @@
 
-import React, { useEffect } from "react";
+import React from "react";
 import validation from "./validation.js"
 import style from "./Forms.module.css"
 import { useNavigate } from "react-router-dom"
@@ -8,40 +8,40 @@ import { Link } from "react-router-dom";
 
 export function Forms(props) {
 
-    const navigate = useNavigate();
-    const [access, setAccess] = React.useState(false);
-    const userName = "preza_95@hotmail.com";
-    const password = "Pretzel1";
+    // const navigate = useNavigate();
+    // // const [access, setAccess] = React.useState(false);
+    // const userName = "preza_95@hotmail.com";
+    // const password = "Pretzel1";
 
-   function login(userData) {
-        if (userData.password === password && userData.userName === userName) {
-            setAccess(true);
-            navigate('/home')
-        }
-    }
-    useEffect(() => {
-        !access && navigate('/');
-    },[access]);
+//    function login(userData) {
+//         if (userData.password === password && userData.userName === userName) {
+//             setAccess(true);
+//             navigate('/home')
+//         }
+//     }
+    // useEffect(() => {
+    //     !access && navigate('/');
+    // },[access]);
 
 
-    const [userData, setUserData] = React.useState({
-        userName: "",
-        password: "",
-    })
+    // const [userData, setUserData] = React.useState({
+    //     userName: "",
+    //     password: "",
+    // })
     
-    const [errors, setErrors] = React.useState({
-        userName: "",
-        password: "",
-    })
-    const handleChange = (event) => {
-        setUserData({ ...userData, [event.target.name]: event.target.value, })
-        setErrors(validation({ ...userData, [event.target.name]: event.target.value, }))
-    }
+    // const [errors, setErrors] = React.useState({
+    //     userName: "",
+    //     password: "",
+    // })
+    // const handleChange = (event) => {
+    //     setUserData({ ...userData, [event.target.name]: event.target.value, })
+    //     setErrors(validation({ ...userData, [event.target.name]: event.target.value, }))
+    // }
 
-    const handleSubmit = (event) => {
-        event.preventDefault()
-        login(userData);
-    }
+    // const handleSubmit = (event) => {
+    //     event.preventDefault()
+    //     login(userData);
+    // }
 
 
     return (
@@ -50,7 +50,10 @@ export function Forms(props) {
             {/* <h1> Type the magical words  </h1> */}
 
             <img className={style.singin} src={waiting} width="400px" height="230px" alt="waiting" />
-            <h1 className={style.h1}> App where you can find Rick and Morty characters!!!  </h1>
+            <div className={style.contenth1}>
+            <h1 className={style.h1}> Find your favorite characters  </h1>
+
+            </div>
 
             {/* <form onSubmit={handleSubmit}>
 

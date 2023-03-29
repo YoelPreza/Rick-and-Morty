@@ -19,8 +19,9 @@ function handleFilter(event){
         <div>
 <h1 className={style.Favorites}>Your Favorite Cards</h1>
             <div>
-                <select className={style.selectorOrden} onChange={handleOrder} name="Order" id="">
-                    <option value="Ascendente">Ascendente</option>
+                <select className={style.selectorOrden} onChange={handleOrder} >
+                <option defaultValue value="all" hidden>Order </option>
+                    <option value="Asc" > Ascendente </option>
                     <option value="Descendente">Descendente</option>
                 </select>
 

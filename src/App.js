@@ -9,34 +9,49 @@ import {CardDetail} from "./components/CardDetail.jsx"
 import Cards from "./components/Cards.jsx"
 import { Forms } from './components/Forms'
 import {useLocation} from "react-router-dom"
-import {useNavigate} from "react-router-dom"
-import { useEffect } from 'react'
+// import {useNavigate} from "react-router-dom"
+// import { useEffect } from 'react'
 import React from 'react'
 import Favorites from "./components/Favorites"
-
+import Swal from 'sweetalert2'
 
 function App() {
+
+  const showAlert = ()=>{
+    Swal.fire({
+    title: "This character is already added",
+    icon: "warning",
+    footer: "<b>Search another character</b>"
+    })
+}
+const showAlert2 = ()=>{
+  Swal.fire({
+  title: "Id character doesn't exist",
+  icon: "warning",
+  footer: "<b>Search another character</b>"
+  })
+}
 
   const [characters, setCharacters] = useState([]);
 
   const location =useLocation();
 
 //-----------------------Seguridad--------
-  const navigate = useNavigate()
-  const [access, setAccess] = React.useState(false);
-  const username = "preza_95@hotmail.com";
-  const password = "Pretzel1";
+  // const navigate = useNavigate()
+  // const [access, setAccess] = React.useState(false);
+  // const username = "preza_95@hotmail.com";
+  // const password = "Pretzel1";
   
-  function login(userData) {
-    if (userData.password === password && userData.username === username) {
-        setAccess(true);
-        navigate('/home')
-    }
-}
+//   function login(userData) {
+//     if (userData.password === password && userData.username === username) {
+//         setAccess(true);
+//         navigate('/home')
+//     }
+// }
 
-useEffect(() => {
-    !access && navigate('/');
-}, [access]);
+// useEffect(() => {
+//     !access && navigate('/');
+// }, [access]);
 
 
 
@@ -48,12 +63,13 @@ useEffect(() => {
         if (data.name) {
 
           for ( let elemento of characters){
-            if (data.id === elemento.id) return window.alert('Ese personaje ya fue agregado')
+            if (data.id === elemento.id) return showAlert()
+            // window.alert('Ese personaje ya fue agregado')
             }
 
           setCharacters((character) => [...character, data]);
-        } else {
-          window.alert('No hay personajes con ese ID');
+        } else { showAlert2();
+          // window.alert('No hay personajes con ese ID');
         }
       });
   }

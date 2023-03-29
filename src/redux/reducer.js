@@ -29,7 +29,8 @@ const rootReducer = (state = initialState, action) => {
             }
         case ORDER:
             const sortedCharacters = state.allCharacters
-            if (action.payload === 'Ascendente') sortedCharacters.sort((a, b) => a.id - b.id)
+            if (action.payload === "Asc") 
+            sortedCharacters.sort((a, b) => a.id - b.id)
             else sortedCharacters.sort((a, b) => b.id - a.id)
             return {
                 ...state,
